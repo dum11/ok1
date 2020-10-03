@@ -1,20 +1,10 @@
-size = int(input())
-for i in range(1,size+1):
-    for j in range(1,size+1):
-        if j == i or i+j == size+1:
-            print("*",end="")
-        else:
-            print(" ",end="")
-    print()
-
-    """
-
-0,0                 0,4
-     1,1       1,3     
-          2,2          
-     3,1       3,3     
-4,0                 4,4
-
-
-
-    """
+while True:
+    print("Please enter the two numbers : ")
+    a = int(input())
+    b = int(input())
+    print(f"The sum of {a} and {b} is : {a+b}")
+    print("enter 1 to run again!!")
+    l = int(input())
+    if l != 1:
+        break
+print("Thanks for using!")
